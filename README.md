@@ -55,7 +55,7 @@ Running both applications requires a specific folder structure that maps directo
 The folder structure includes an `demo.csv` input file for GeoCARET demonstration run and a `test_input.json` input file for testing RE-Emission. You can also create your own input files for both GeoCARET and RE-Emission, placing them in the appropriate folders as shown in the file tree below.
 
 ``` bash
-geocaret-reemission-docker (root)
+geocaret-reemission (root)
 ├── geocaret
 │   ├── auth
 │   ├── compose.yml
