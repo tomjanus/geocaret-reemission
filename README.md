@@ -172,7 +172,7 @@ They contents of each folder are explained below:
 
 An animated GIF demonstrating how to run the demo (albeit not from within the Docker container) is shown below. Running the demo using the Docker image should look the same, except for the initial command.
 
-
+![demo-22-05-24](https://github.com/user-attachments/assets/b8875111-d19d-4e86-828f-57cbe51ce42e)
 
 The interactive map can also be accessed at [https://tomjanus.github.io/reemission_demo_map](https://tomjanus.github.io/reemission/demo_map).
 
