@@ -176,3 +176,5 @@ geocaret/auth/*
 # Ignore eveything in the geocaret/outputs folder except for README.md
 geocaret/outputs/*
 !geocaret/outputs/README.md
+
+*.gif

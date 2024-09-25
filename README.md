@@ -172,13 +172,9 @@ They contents of each folder are explained below:
 
 An animated GIF demonstrating how to run the demo (albeit not from within the Docker container) is shown below. Running the demo using the Docker image should look the same, except for the initial command.
 
-![demo-anigif-exmaple](https://github-production-user-asset-6210df.s3.amazonaws.com/8837107/333209609-b101e9d0-ac60-4f21-bbeb-a8a8ae85522b.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240924%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240924T142748Z&X-Amz-Expires=300&X-Amz-Signature=b579889a967cb63f6ea7ca25bbbe917df29a81fea93976b5f790349f06e2db0f&X-Amz-SignedHeaders=host)
 
-The map can also be accessed at [https://tomjanus.github.io/reemission_demo_map](https://tomjanus.github.io/reemission/demo_map) (see below).
 
-<div style='border-radius: 15px; padding:0.1em; margin-bottom:1em'>
-<iframe src="https://tomjanus.github.io/reemission_demo_map/" height="600px" width="100%"></iframe>
-</div>
+The interactive map can also be accessed at [https://tomjanus.github.io/reemission_demo_map](https://tomjanus.github.io/reemission/demo_map).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
