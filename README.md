@@ -33,7 +33,7 @@ Docker can be set to start automatically at system startup. If you choose not to
 Additionally, to run GeoCARET, you will need to set up an account with Google Earth Engine / Google Cloud and request access to the private assets hosted in our project folder. Detailed instructions on how to do this are available in the following documentation pages:
 
 - [Setting up Earth Engine and Google Cloud](https://reservoir-research.github.io/geocaret/installation/account_setup.html)
-- [Requesting access to private assets]([www.www](https://reservoir-research.github.io/geocaret/installation/access_to_assets.html))
+- [Requesting access to private assets](https://reservoir-research.github.io/geocaret/installation/access_to_assets.html)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
