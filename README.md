@@ -205,7 +205,7 @@ An internet connection needs to present throughout the process of running the Ge
 
 #### Running Times
 
-The majority of the processing time is spent in GeoCARET, where reservoirs and catchments are delineated and their respective characteristics computed. The computational time varies depending on the size of the reservoirs and catchments, as well as the availability of Google’s servers and their current workload. In our experience, it took **19 minutes** to analyze three dams during this GeoCARET demonstration run, using an Earth Engine account with unpaid usage. Please note that this time does not include the optional export of delineations to Google Drive, which took an additional **4 minutes**. The run times for the subsequent steps are measured in seconds.
+The majority of the processing time is spent in GeoCARET, where reservoirs and catchments are delineated and their respective characteristics computed. The computational time varies depending on the size of the reservoirs and catchments, as well as the availability of Google’s servers and their current workload. In our experience, it took **19 minutes** to analyze three dams during this GeoCARET demonstration run, using an Earth Engine account with unpaid usage. Please note that this time does not include the optional export of delineations to Google Drive, which took an additional **2.5 minutes**. The run times for the subsequent steps are measured in seconds.
 
 ### GeoCARET-ReEmission Demo
 
