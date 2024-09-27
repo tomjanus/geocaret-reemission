@@ -162,6 +162,7 @@ examples
 ├── reemission_outputs
 └── test_input.json
 ```
+
 They contents of each folder are explained below:
 
 * `reemission_demo_delineations` : Contains geospatial outputs from GeoCARET, including reservoir and catchment delineations, impounded river segments, and tabular outputs with emission input parameters in `output_parameters.csv`. Each folder contains outputs from a single simulation run. This folder is fetched from a remote source.
@@ -204,7 +205,7 @@ An internet connection needs to present throughout the process of running the Ge
 
 #### Running Times
 
-The majority of the processing time is spent in GeoCARET, where reservoirs and catchments are delineated and their respective characteristics computed. The computational time varies depending on the size of the reservoirs and catchments, as well as the availability of Google’s servers and their current workload. In our experience, it took **19 minutes** to analyze three dams during this GeoCARET demonstration run, using an unpaid Earth Engine account. Please note that this time does not include the optional export of delineations to Google Drive, which took an additional **4 minutes**. The run times for the subsequent steps are measured in seconds.
+The majority of the processing time is spent in GeoCARET, where reservoirs and catchments are delineated and their respective characteristics computed. The computational time varies depending on the size of the reservoirs and catchments, as well as the availability of Google’s servers and their current workload. In our experience, it took **19 minutes** to analyze three dams during this GeoCARET demonstration run, using an Earth Engine account with unpaid usage. Please note that this time does not include the optional export of delineations to Google Drive, which took an additional **4 minutes**. The run times for the subsequent steps are measured in seconds.
 
 ### GeoCARET-ReEmission Demo
 
@@ -289,11 +290,15 @@ The generated files, `outputs/output_data_demo.json` and `outputs/output_data_de
 
 ### Exporting delineations to GDrive - <a style="color: skyblue">OPTIONAL</a>
 
-We have currently configured GeoCARET to output only the tabular values. However, you can also optionally export the other generated files, including reservoir and catchment delineations (polygons), dam locations (points), and impounded river sections (polylines) in shapefile format. These files will be exported to your Google Drive. To perform the file export, use the following command, where `DEMO_[yyyymmdd]-[hh-mm]` corresponds to the output folder generated during the GeoCARET run.
+We have currently configured GeoCARET to output only the tabular values. However, you can also optionally export the other generated files, including reservoir and catchment delineations (polygons), dam locations (points), and impounded river sections (polylines) in shapefile format. These files will be exported to your Google Drive. To perform the file export, use the following command, where `DEMO_[yyyymmdd]-[hh-mm]` corresponds to the output folder generated during the GeoCARET run and `geocaret-demo` is the project folder. The `--drive-folder` flag sets the the path on your Google Drive where the results will be exported to. All arguments: `--results-path`, `--drive-folder` and `--project` are required.
 
 ```bash
-docker compose run --rm geocaret python heet_export_cli.py projects/geocaret-demo/assets/emissions/XHEET/DEMO_[yyymmdd]-[hh-mm] DEMO_[yyymmdd]-[hh-mm]
+docker compose run --rm geocaret python heet_export_cli.py \
+  --results-path projects/geocaret-demo/assets/emissions/XHEET/DEMO_[yyymmdd]-[hh-mm] \
+  --drive-folder DEMO_[yyymmdd]-[hh-mm] \
+  --project geocaret-demo
 ```
+
 You can download the folder manually from your Google Drive, either via a web browser or using a Google Drive client.
 
 ## Known Issues <i class="fa fa-bug" aria-hidden="true"></i>
