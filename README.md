@@ -42,8 +42,8 @@ Additionally, to run GeoCARET, you will need to set up an account with Google Ea
 It is recommended to fetch the Docker images directly from the GitHub Container Registry (GHCR) using the following commands:
 
 ```bash
-docker pull ghcr.io/reservoir-research/geocaret
-docker pull ghcr.io/tomjanus/reemission
+docker pull ghcr.io/reservoir-research/geocaret:release
+docker pull ghcr.io/tomjanus/reemission:release
 ```
 
 Alternatively, you can build the images from source by downloading the source code for each package from their respective GitHub repositories. Instructions for building GeoCARET can be found [here](https://reservoir-research.github.io/geocaret/installation/building_image.html), and for RE-Emission [here](https://tomjanus.github.io/reemission/installation/building_image.html).
