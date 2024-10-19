@@ -46,11 +46,22 @@ docker pull ghcr.io/reservoir-research/geocaret:release
 docker pull ghcr.io/tomjanus/reemission:release
 ```
 
+Docker will automatically assign names of the pulled images based on their URLs. After you have pulled both images typing the `docker images` command, should produce a similar output to the one below:
+
+```bash
+❯ docker images
+REPOSITORY                            TAG       IMAGE ID       CREATED       SIZE
+ghcr.io/reservoir-research/geocaret   release   xxxxxxxxxxxx   x weeks ago   x.xxGB
+ghcr.io/tomjanus/reemission           release   xxxxxxxxxxxx   x weeks ago   x.xxGB
+```
+
+Image names have have a `[REPOSITORY]:[TAG]` format. In other words, in case you need to, you should refer to both images as `ghcr.io/reservoir-research/geocaret:release` and `ghcr.io/tomjanus/reemission:release`.
+
 Alternatively, you can build the images from source by downloading the source code for each package from their respective GitHub repositories. Instructions for building GeoCARET can be found [here](https://reservoir-research.github.io/geocaret/installation/building_image.html), and for RE-Emission [here](https://tomjanus.github.io/reemission/installation/building_image.html).
 
 ## Folder structure
 
-Running both applications requires a specific folder structure that maps directories on your local file system to corresponding locations inside the Docker containers, enabling data exchange, e.g. reading inputs and saving outputs. This mapping is defined in two separate `compose.yaml` files—one for each application.
+Running both applications requires a specific folder structure that maps directories on your local file system to correspondingu  locations inside the Docker containers, enabling data exchange, e.g. reading inputs and saving outputs. This mapping is defined in two separate `compose.yaml` files—one for each application.
 
 The folder structure includes an `demo.csv` input file for GeoCARET demonstration run and a `test_input.json` input file for testing RE-Emission. You can also create your own input files for both GeoCARET and RE-Emission, placing them in the appropriate folders as shown in the file tree below.
 

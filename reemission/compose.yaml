@@ -2,7 +2,7 @@ services:
   reemission:
     build:
       context: .
-    image: reemission_image
+    image: ghcr.io/tomjanus/reemission:release
     volumes:
       - ./examples:/home/appuser/reemission/examples
       - ./outputs:/home/appuser/reemission/outputs
