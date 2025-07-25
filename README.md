@@ -153,7 +153,7 @@ RE-Emission also supports generating output reports in a PDF format. However, th
 
 #### ReEmission Demo
 
-You can run a short demo that demonstrates how RE-Emission processes tabular input data, along with reservoir and catchment delineations from GeoCARET, to calculate reservoir emissions and visualize them on an interactive map. More details about the demo can be found on the [corresponding page in RE-Emission's documentation](https://tomjanus.github.io/reemission/demo.html). To run the demo from within the `reemission` folder, use the following command:
+You can run a short demo that demonstrates how RE-Emission processes tabular input data, along with reservoir and catchment delineations from GeoCARET, to calculate reservoir emissions and visualize them on an interactive map. More details about the demo can be found on the [corresponding page in RE-Emission's documentation](https://tomjanus.github.io/reemission/visualisation.html). To run the demo from within the `reemission` folder, use the following command:
 
 ```bash
 docker compose run --rm reemission reemission run-demo examples
